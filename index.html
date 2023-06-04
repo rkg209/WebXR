@@ -67,10 +67,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let title = new Gltf2Node({url: 'media/gltf/text/text.gltf'});
-      arObject.addNode(title);
+      // let title = new Gltf2Node({url: 'media/gltf/text/text.gltf'});
+      // arObject.addNode(title);
 
-      let flower = new Gltf2Node({url: 'media/gltf/viking_room/viking_room.gltf'});
+      let flower = new Gltf2Node({url: 'media/gltf/cave/cave.gltf'});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle1.gltf'});
@@ -167,11 +167,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         newFlower.visible = true;
         newFlower.matrix = matrix;
 
-        title.visible = true;
-        title.matrix = matrix;
+        //title.visible = true;
+        //title.matrix = matrix;
         
         scene.addNode(newFlower);
-        scene.addNode(title);
+        //scene.addNode(title);
         
         flowers.push(newFlower);
 
